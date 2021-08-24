@@ -7,4 +7,4 @@ to download this right this in your terminal
 > pip install pygame
 
 ***Enjoy it :)***
-***blocks in 1 line: `this is how its done`***
+***because: `its 3d!`***
