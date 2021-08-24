@@ -1,5 +1,5 @@
-from os import read
-from numpy import double, load, save
+# pip install - ursina
+# pip install - pygame
 import pygame
 pygame.mixer.init()
 pygame.init()
@@ -8,18 +8,18 @@ import ursina
 from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
-window.title= "Vishal's Craft"
+window.title= "Python's MineCraft"
 window.borderless = False
 window.exit_button.visible = False
 
 
-grass_texture = load_texture("grass.jpg")
-sky_texture = load_texture("sky.jpg")
-soil_texture = load_texture("ground.jpg")
-stone_texture = load_texture("wall.png")
-wood_texture = load_texture("sand.jpg")
-lava_texture = load_texture("lava.png")
-water_textue = load_texture("water.jpg")
+grass_texture = load_texture("Assets/grass.jpg")
+sky_texture = load_texture("Assets/sky.jpg")
+soil_texture = load_texture("Assets/ground.jpg")
+stone_texture = load_texture("Assets/wall.png")
+wood_texture = load_texture("Assets/sand.jpg")
+lava_texture = load_texture("Assets/lava.png")
+water_textue = load_texture("Assets/water.jpg")
 
 
 
@@ -39,7 +39,7 @@ def update():
 
     if held_keys["left mouse"] or held_keys["right mouse"]:
         hand.active()
-        pygame.mixer.music.load('wing.mp3')
+        pygame.mixer.music.load('Assets/wing.mp3')
         pygame.mixer.music.play()
     
     else:
